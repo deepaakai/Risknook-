@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #070A11;
+    color: #E2E8F0;
+  }
+
+  /* Force tabular numbers in financial data */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars for high-density terminal */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070A11;
+}
+::-webkit-scrollbar-thumb {
+  background: #1B253B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D3D5E;
+}
+
+@keyframes siren-strobe {
+  0%, 100% {
+    background-color: rgba(244, 63, 94, 0.15);
+    box-shadow: inset 0 0 80px rgba(244, 63, 94, 0.4);
+  }
+  50% {
+    background-color: rgba(244, 63, 94, 0.03);
+    box-shadow: inset 0 0 20px rgba(244, 63, 94, 0.1);
+  }
+}
+
+.animate-siren-strobe {
+  animation: siren-strobe 1.2s infinite ease-in-out;
+}

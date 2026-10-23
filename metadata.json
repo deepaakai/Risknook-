@@ -1,0 +1,6 @@
+{
+  "name": "Risknook - Institutional Capital Shield & F&O Risk Engine",
+  "description": "High-density institutional trading workstation with dynamic capital sizing, Greeks risk desk, multi-timeframe confluence, behavioral circuit breaker, and post-market execution journal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
